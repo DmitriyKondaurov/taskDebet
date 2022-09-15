@@ -4,34 +4,58 @@
     <meta charset="UTF-8">
     <title>Test task</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
-    <h1>Test task for "Manager at Debet"</h1>
-    <form action="#" class="form">
-        <button type="button">Fill arrays</button>
-        <h2>Array (length)</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Index</th>
-                <th>length</th>
-            </tr>
-            </thead>
-        </table>
-        <h2>Array (width)</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Index</th>
-                <th>length</th>
-            </tr>
-            </thead>
-        </table>
-    </form>
+    <header>
+        <h1 class="header-title">Test task for "Manager at Debet"</h1>
+    </header>
+    <main class="main">
+        <div class="main__fill-btn">
+            <button type="button" class="button" data-fill-btn>Fill arrays</button>
+        </div>
+        <div class="main__tables">
+            <div>
+                <h2>Array (length)</h2>
+                <table class="main__table">
+                    <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>length</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div>
+                <h2>Array (width)</h2>
+                <table class="main__table">
+                    <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>length</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="main__result">
+            <div class="main__input-box">
+                <label for="width<height">Rectangles where width&lt;height:</label>
+                <input id="width<height" type="text" name="height" value="" data-height disabled>
+            </div>
+            <div class="main__input-box">
+                <label for="width>height">Rectangles where width&gt;height:</label>
+                <input id="width>height" type="text" name="width" value="" data-width disabled>
+            </div>
+            <div class="main__input-box">
+                <label for="diagonal">Rectangle where the longest diagonal:</label>
+                <input id="diagonal" type="number" name="diagonal" value="" data-diagonal disabled>
+            </div>
+        </div>
+        <div class="main__run-btn">
+            <button type="button" class="button" data-run-btn>calculate result</button>
+        </div>
+    </main>
 </div>
 
 <script defer src="main.js"></script>

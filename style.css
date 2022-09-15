@@ -1,8 +1,48 @@
 .wrapper {
   max-width: 1280px;
   margin: auto;
-  font: 14px 'Montserrat', sans-serif;;
+  font: 14px 'Arial', sans-serif;;
 }
-.form {
 
+.header-title {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  height: 550px;
+  display: flex;
+  flex-flow: column;
+}
+
+.main__tables {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.main__result {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+}
+
+.main__fill-btn {
+  align-self: center;
+}
+
+.main__input-box{
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
