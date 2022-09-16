@@ -28,6 +28,10 @@ table, thead, th, td {
   border-collapse: collapse;
 }
 
+th, td {
+  padding: 0 5px;
+}
+
 .main__result {
   padding: 40px 0;
   display: flex;
