@@ -40,15 +40,35 @@ th, td {
   flex-flow: column;
 }
 
-.main__fill-btn {
+.main__fill-btn, .main__clear-btn {
   align-self: center;
 }
 
+
+.main__fill-btn button {
+  color: darkblue;
+}
+
+.main__clear-btn button {
+  color: crimson;
+}
+
+.main__run-btn button {
+  color: darkgreen;
+}
+
 .main__input-box{
-  width: 400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+}
+
+.main__input-box input {
+  /*width: 70px;*/
+}
+
+.main__input-box label {
+  width: 290px;
 }
 
 .button {

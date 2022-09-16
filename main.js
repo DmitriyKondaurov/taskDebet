@@ -1,8 +1,10 @@
+const clearButton = document.querySelector('[data-clear-btn]');
 const fillButton = document.querySelector('[data-fill-btn]');
 const runButton = document.querySelector('[data-run-btn]');
 const widthTableEl = document.querySelector('[data-table-width]');
 const heightTableEl = document.querySelector('[data-table-height]');
 let rectanglesList = [];
+
 
 const addTableEl = (rowNumber, table) => {
   const newTrEl = document.createElement('tr');
@@ -47,3 +49,7 @@ const fillHtmlTables = (index) => {
 buildTables();
 
 fillButton.addEventListener('click', fillArrays);
+
+clearButton.addEventListener('click', () => {
+  document.location.reload();
+})
