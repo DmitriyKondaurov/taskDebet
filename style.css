@@ -23,7 +23,7 @@
   align-content: center;
 }
 
-.table, th, td {
+table, thead, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
@@ -45,4 +45,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.button {
+  padding: 5px 15px;
 }
