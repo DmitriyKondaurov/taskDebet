@@ -44,7 +44,6 @@ th, td {
   align-self: center;
 }
 
-
 .main__fill-btn button {
   color: darkblue;
 }
@@ -64,11 +63,13 @@ th, td {
 }
 
 .main__input-box input {
-  /*width: 70px;*/
+  width: 40px;
+  text-align: center;
 }
 
 .main__input-box label {
   width: 290px;
+  color: darkgreen;
 }
 
 .button {
