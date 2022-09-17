@@ -48,6 +48,7 @@ const fillHtmlTables = (index) => {
   heightTableEl.children[Math.floor(index / 5)].children[index % 5 * 2 + 1].textContent = recHeightsList[index];
 }
 
+// This is a main function for solve the task
 const calculate = (widthArray, heightArray) => {
 
   const rectanglesList = widthArray.map((element, index) => {
@@ -79,7 +80,6 @@ const calculate = (widthArray, heightArray) => {
   heightBiggerEl.setAttribute ('value', heightBigger);
   longestDiagonalEl.setAttribute ('value', longestDiagonal);
 }
-
 
 fillButton.addEventListener('click', fillArrays);
 
